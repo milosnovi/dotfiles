@@ -2,9 +2,23 @@
 	name = Mirko Borivojevic
 	email = mirko@mirkoborivojevic.com
 [alias]
+	##
+	# Commonly used commands
+	##
+	cl = clone
+	st = status -s
+	ci = commit
+	cm = commit -m
+	cma = commit -a -m
+	ca = commit --amend
+	co = checkout
+	br = branch 
+
+	##
 	# Diff commits between two branches
 	# Usage: git db stage master
 	# See: http://stackoverflow.com/q/7566416/124644
+	##
 	db = "!f() { git log --left-right --graph --cherry-pick --oneline $1...$2; }; f"
 
 	##
