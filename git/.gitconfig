@@ -1,6 +1,9 @@
+[core]
+	editor = /usr/bin/vim
 [user]
 	name = Mirko Borivojevic
 	email = mirko@mirkoborivojevic.com
+	editor = /usr/bin/vim
 [alias]
 	##
 	# Commonly used commands
