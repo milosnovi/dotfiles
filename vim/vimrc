@@ -1,0 +1,24 @@
+" set up pathogen, https://github.com/tpope/vim-pathogen
+filetype off
+call pathogen#infect()
+filetype plugin indent on
+
+" don't bother with vi compatibility
+set nocompatible
+
+" enable syntax highlighting
+syntax enable
+
+" show line numbers
+set number
+
+" keyboard shortcuts
+let mapleader = ','
+nmap <leader>b :CtrlPBuffer<CR>
+nmap <leader>d :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>t :CtrlP<CR>
+
+" plugin settings
+let g:ctrlp_match_window = 'order:ttb,max:20'
+let g:NERDSpaceDelims=1
