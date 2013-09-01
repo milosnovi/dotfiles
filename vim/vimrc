@@ -9,6 +9,9 @@ set nocompatible
 " enable syntax highlighting
 syntax enable
 
+" enable 256 colors
+set t_Co=256
+
 " show line numbers
 set number
 
@@ -22,3 +25,5 @@ nmap <leader>t :CtrlP<CR>
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
+" vim-airline doesn't appear until I create a new split
+set laststatus=2
