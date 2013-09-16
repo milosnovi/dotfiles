@@ -40,3 +40,4 @@ complete -F _completemarks jump unmark
 
 # Use PHP version from homebrew
 export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix php54)/bin:$PATH"
