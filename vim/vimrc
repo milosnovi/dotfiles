@@ -21,6 +21,11 @@ nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>t :CtrlP<CR>
+" disable moving cursor around using arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
