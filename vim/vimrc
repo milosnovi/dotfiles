@@ -21,6 +21,12 @@ nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>t :CtrlP<CR>
+nmap <leader>l :setlocal number!<CR>
+nmap <leader>o :set paste!<CR>
+" quickly navigate between buffers
+nmap <C-e> :e#<CR>
+nmap <C-n> :bnext<CR>
+nmap <C-p> :bprev<CR>
 " disable moving cursor around using arrow keys
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -29,6 +35,7 @@ noremap <Right> <NOP>
 
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
+let g:ctrlp_map = '<c-t>'
 let g:NERDSpaceDelims=1
 " vim-airline doesn't appear until I create a new split
 set laststatus=2
