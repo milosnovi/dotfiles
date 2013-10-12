@@ -1,3 +1,6 @@
+# Load aliases
+. ~/.aliases/general.aliases.bash
+
 # Quickly navigate your filesystem from the command-line
 #
 # See: http://jeroenjanssens.com/2013/08/16/quickly-navigate-your-filesystem-from-the-command-line.html
