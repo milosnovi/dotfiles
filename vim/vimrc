@@ -32,7 +32,17 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
-
+" Make dealing with split windows a little easier
+set equalalways " Vertical and horizontal splits default to equal sizes when created
+set splitbelow splitright
+:noremap <leader>v :vsp<cr> " Quick access to vertical splits
+:noremap <leader>h :split<cr> " Quick access to horizontal splits
+:noremap <leader>w :wincmd w<cr> " Cycle through windows
+" Smart way to move btw. windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:ctrlp_map = '<c-t>'
