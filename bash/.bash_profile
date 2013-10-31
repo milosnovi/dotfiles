@@ -48,3 +48,8 @@ export PATH="$(brew --prefix php54)/bin:$PATH"
 # Setup node.js and NPM paths
 export NODE_PATH="/usr/local/lib/node"
 export PATH="/usr/local/share/npm/bin:$PATH"
+
+# Autocomplete Git Commands and Branch Names
+if [ -f ~/.git-completion.bash ]; then
+	. ~/.git-completion.bash
+fi
