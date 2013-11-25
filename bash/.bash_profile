@@ -43,7 +43,7 @@ complete -F _completemarks jump unmark
 
 # Use PHP version from homebrew
 export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix php54)/bin:$PATH"
+export PATH="$(brew --prefix php55)/bin:$PATH"
 
 # Setup node.js and NPM paths
 export NODE_PATH="/usr/local/lib/node"
